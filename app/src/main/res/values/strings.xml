@@ -16,5 +16,9 @@
     <string name="key_plus">+</string>
     <string name="key_minus">-</string>
     <string name="key_result">=</string>
+    <string name="key_clear">Clear</string>
+    <string name="key_negative">+/-</string>
+    <string name="key_percent">%</string>
+    <string name="turnoffkey">turnoffkey</string>
 
 </resources>
