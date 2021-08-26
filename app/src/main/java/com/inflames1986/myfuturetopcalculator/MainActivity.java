@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
     private Button keyPlus;
     private Button keyResult;
     private Button keyDot;
+    private Button keyClear;
 
     private static int computedResult(List<String> listOne, List<String> listTwo, String operator) {
         int sumFirstHolder = 0;
@@ -323,6 +324,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        keyClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isOperatorTriggered) {
+                    formulaHolder = "0";
+                }
+                displayFormula(formulaHolder);
+            }
+        });
+
     }
 
     private void findByIds() {
@@ -344,6 +355,7 @@ public class MainActivity extends AppCompatActivity {
         this.keyDot = findViewById(R.id.key_dot);
         this.keyMult = findViewById(R.id.key_mult);
         this.keyResult = findViewById(R.id.key_result);
+        this.keyClear = findViewById(R.id.key_clear);
     }
 
     private void displayFormula(String number) {
