@@ -328,7 +328,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (isOperatorTriggered) {
-                    formulaHolder = "0";
+                    formulaHolder = null;
                 }
                 displayFormula(formulaHolder);
             }
