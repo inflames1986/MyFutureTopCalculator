@@ -237,4 +237,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/key_negative" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dark_theme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font20325"
+        android:text="@string/key_dark"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/key_3"
+        app:layout_constraintStart_toStartOf="@id/key_1"
+        app:layout_constraintTop_toBottomOf="@id/result" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/light_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font20325"
+        android:text="@string/light_theme"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/key_clear"
+        app:layout_constraintTop_toBottomOf="@id/result" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
