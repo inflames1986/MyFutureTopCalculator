@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="mycalc_color">#2991AF</color>
+    <color name="mycalc_color2">#B14E47</color>
+    <color name="textcolor1">#673AB7</color>
+    <color name="buttonColor">#053507</color>
 </resources>

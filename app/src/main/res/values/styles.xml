@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyCalcButtonStyle">
+        <item name="android:backgroundTint">@color/buttonColor</item>
+        <item name="fontFamily">@font/font20325</item>
+        <item name="android:textColor">@color/textcolor1</item>
+        <item name="android:textSize">@dimen/textsize1</item>
+    </style>
+
+    <style name="MyCalcButtonSecondStyle" parent="MyCalcButtonStyle">
+        <item name="android:backgroundTint">@color/purple_500</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
