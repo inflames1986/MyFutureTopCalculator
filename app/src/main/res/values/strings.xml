@@ -20,5 +20,7 @@
     <string name="key_negative">+/-</string>
     <string name="key_percent">%</string>
     <string name="turnoffkey">turnoffkey</string>
+    <string name="key_dark" translatable="false">DarkMode</string>
+    <string name="light_theme" translatable="false">LightMode</string>
 
 </resources>

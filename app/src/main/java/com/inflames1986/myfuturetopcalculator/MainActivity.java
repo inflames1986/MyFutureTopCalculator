@@ -7,6 +7,8 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.inflames1986.myfuturetopcalculator.storage.ThemeStorage;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -107,6 +109,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ThemeStorage storage = new ThemeStorage(this);
+
+        setTheme(storage.getAppTheme().getTheme());
+
         setContentView(R.layout.activity_main_constraint_for_calc);
 
 
@@ -115,6 +122,20 @@ public class MainActivity extends AppCompatActivity {
         this.isOperatorTriggered = false;
         this.firstHolder = new ArrayList<>();
         this.secondHolder = new ArrayList<>();
+
+        findViewById(R.id.light_theme).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setTheme(R.style.MyCalcButtonStyle);
+            }
+        });
+
+        findViewById(R.id.dark_theme).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setTheme(R.style.MyCalcButtonSecondStyle);
+            }
+        });
 
         findByIds();
 
@@ -356,6 +377,7 @@ public class MainActivity extends AppCompatActivity {
         this.keyMult = findViewById(R.id.key_mult);
         this.keyResult = findViewById(R.id.key_result);
         this.keyClear = findViewById(R.id.key_clear);
+
     }
 
     private void displayFormula(String number) {
